@@ -1,10 +1,12 @@
 # IterativeProject
 
 This code aims to solve the linear system:
-$$
- (I_A + AL^{-1}E_A)\gamma = AL^{-1}f + B\psi_b, \\
- \psi = L^{-1}(f - E_A \gamma),
-$$
+
+$(I_A + AL^{-1}E_A)\gamma = AL^{-1}f + B\psi_b,$
+
+ $\psi = L^{-1}(f - E_A \gamma),
+$
+
 where $L$ is a finite difference discretization matrix for a 2D free space with Dirichlet BC, which can be fastly solved by FFT method. The unknowns are $\gamma$ and $\psi$.
 
 Inside the code, the fast FFT transform for $L$, the GMRES method and the BICGStab($l$) method are implemented.
