@@ -24,7 +24,7 @@ Inside the code, the fast FFT transform for $L$, the GMRES method and the BICGSt
 
 `\test` includes all the test files for these methods. `\test\test.jl` shows some examples to use the package.
 
-## Guide
+## Usage
 
 To activate the package, in Julia,
 
