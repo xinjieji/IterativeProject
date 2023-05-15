@@ -123,6 +123,6 @@ end
 Function to represent the left-hand-side of the linear system
 (I_A + AL^{-1}E_A)*γ
 """
-function A(x, A, E_A, diag_L)
-    return x + A*inverse_Laplacian(E_A*x, diag_L)
+function A_func(x, A, E_A, diag_L, grid::Grid)
+    return x + A*inverse_Laplacian(reshape(E_A*x, grid.dims), diag_L)
 end
